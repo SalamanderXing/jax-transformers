@@ -1,0 +1,45 @@
+{
+    "tutorial6": {
+        "name": "tutorial6",
+        "project": {
+            "models": {
+                "transformer": {
+                    "name": "transformer",
+                    "exports": [
+                        "TransformerPredictor"
+                    ],
+                    "errors": []
+                }
+            },
+            "data_loaders": {
+                "reverse": {
+                    "name": "reverse",
+                    "exports": [
+                        "get_loaders"
+                    ],
+                    "errors": []
+                }
+            },
+            "trainers": {
+                "reverse_trainer": {
+                    "name": "reverse_trainer",
+                    "exports": [
+                        "ReverseTrainer"
+                    ],
+                    "errors": []
+                }
+            },
+            "experiments": {
+                "reverse": {
+                    "name": "reverse",
+                    "errors": [],
+                    "imports": [
+                        "data_loaders",
+                        "trainers",
+                        "models"
+                    ]
+                }
+            }
+        }
+    }
+}
